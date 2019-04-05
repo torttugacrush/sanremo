@@ -1,10 +1,12 @@
-descargar GitHup
+﻿descargar GitHup
 https://desktop.github.com/
 
 Github mas facil Tutotial:
 https://www.youtube.com/watch?v=IW28zJc7BN0
 
-por cmd : Git y Github | Curso Práctico de Git y Github Desde Cero
+
+
+(opcional) por cmd : Git y Github | Curso Práctico de Git y Github Desde Cero
 https://www.youtube.com/watch?v=HiXLkL42tMU&t=1972s
 
 
