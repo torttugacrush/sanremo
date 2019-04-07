@@ -28,6 +28,32 @@ $(document).ready(function() {
 	      });
 	    }		
 	});
+	$('#task-form').submit(function(e) {
+		  const postData = {
+		  	name: $('#name').val(),
+		  	desciption: $('#description').val()
+		  };
+		  $.post('task-add.php', postData, function (response) {
+		  	console.log(response);
+
+		  	$('#task-form').trigger('reset');
+		  
+		  });
+		e.preventDefault();
+	});
+
+	$.$.ajax({
+		url: 'task-list.php',
+		type: 'GET',
+		success: function(response) {
+			console.log(response);
+		}
+	});
+
+	
+
+
   });
+
 
 
