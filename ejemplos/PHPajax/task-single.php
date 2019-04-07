@@ -1,6 +1,8 @@
 <?php
-  include('database.php');
-  $query = "SELECT * from task";
+include('database.php');
+if(isset($_POST['id'])) {
+  $id = mysqli_real_escape_string($connection, $_POST['id']);
+  $query = "SELECT * from task WHERE id = {$id}";
   $result = mysqli_query($connection, $query);
   if(!result) {
     die('Query Failed'. mysqli_error($connection));
@@ -13,6 +15,7 @@
       'id' => $row['id']
     );
   }
-  $jsonstring = json_encode($json);
+  $jsonstring = json_encode($json[0]);
   echo $jsonstring;
+}
 ?>
