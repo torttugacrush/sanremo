@@ -1,5 +1,5 @@
-<?php include("db.php")?>
-<?php include("includes/header.php")?>
+<?php include('db.php'); ?>
+<?php include('includes/header.php'); ?>
 <!--
 	comando Emmet
 .container.p-4>.row>(.col-md-4>.card.card-body>form>.form-group>imput.form-comtrol)+.col-md-8
@@ -40,22 +40,28 @@
 					</tr>
 				</thead>
 				<tbody>
-
 					<?php
 					$query = "SELECT * FROM task"; 
 					$result_taks = mysqli_query($conn, $query);
-
 					while($row = mysqli_fetch_array($result_taks)) { ?>
 						<tr>
 							<td><?php echo $row['title']; ?></td>
 							<td><?php echo $row['description']; ?></td>
 							<td><?php echo $row['create_at']; ?></td>
-					
+							<td>
+							  <a href="edit.php?id=<?php echo $row['id']; ?>" class="btn btn-secondary">>
+							  	<i class="fas fa-marker"></i>
+							  </a>
+
+							  <a href="delete_task.php?id=<?php echo $row['id']; ?>"  class="btn btn-danger">
+							  	<i class="far fa-trash-alt"></i>
+							  </a>
+							</td>
 						
 						</tr>
 
 
-					?php } ?>
+					<?php } ?>
 				</tbody>
 			</table>
 
@@ -63,7 +69,7 @@
 	</div>
 </main>
 
-<?php include("includes/footer.php")?>
+<?php include('includes/footer.php'); ?>
 
 
 
