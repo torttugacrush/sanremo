@@ -1,5 +1,7 @@
 <?php
-$comn = mysqli_connect(
+session_start();
+
+$conn = mysqli_connect(
 'localhost',
 'root',
 '',
