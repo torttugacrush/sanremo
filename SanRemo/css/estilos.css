@@ -1,0 +1,403 @@
+.Fotoperfil{
+background-image: url('../img/perfil.jpg');
+background-size: 100% 100%;
+  height: 8em;
+  }
+.fotocentrar{
+	   display: flex;
+    align-items: center;
+}
+h1,h2,p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.inner {
+	position: relative;
+	height:100%;
+
+	width:100%;
+	margin:0 auto;
+}
+.tablePerfil{
+    margin-top:  6em; /*margen de altura "+Y"*/
+    margin-bottom: 3em;/*margen de altura "-Y"*/
+
+}
+
+
+.h2e{
+margin-left: 10%;	
+}
+.vertical-center p {
+	margin-top:10px;
+}
+.vertical-center {
+	text-align:center;
+	width:100%;
+	position: absolute;
+	top: 47%;
+	transform: translateY(-47%);
+}
+.vertical-centers {
+	text-align:center;
+	transform: translateY(-47%);
+		top: 47%;
+	}
+.vertical-derecha {
+	text-align: left;
+	margin-left: 5%;	
+/*texto2*/
+
+
+}
+.vertical-center p {
+	margin-top:23px;
+}
+
+.vertical-center p.cta {
+	margin-top:5px;
+}
+.vertical-center a:link,
+.vertical-center a:visited {
+	color:white;
+	text-decoration:none;
+
+	font-size:0.6em;
+}
+.vertical-center a:hover {
+	text-decoration: underline;
+}
+.titulo{
+text-align: center;
+ font-family:  Arial, Helvetica, sans-serif;
+}
+ .textos{
+    color: #E9E9E9;
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+font-size: 20px;
+
+text-shadow: -1px -1px 1px #000000, 1px -1px 1px #333, -1px 1px 1px #000000, 1px 1px 1px #333;
+
+letter-spacing: 1px;
+}
+ .textos:hover{
+ color: white; 
+text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  letter-spacing: 1px;
+}
+
+.texto2{
+ color: #000000;
+  font-family:  Arial, Helvetica, sans-serif;
+text-align: center;
+text-shadow: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.texto2:hover{
+  color: #FF0000;
+
+    letter-spacing: 1px;
+
+}
+.activo2{
+
+  color: #FF0000;
+  font-family:  Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.activo1{
+
+ color: white; 
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+font-size: 20px;
+letter-spacing: 0;
+text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+
+letter-spacing: 1px;
+}
+
+
+
+      .fondo1{
+        height: 400px;
+        background: salmon;
+      }
+      .fondo2{
+        height: 400px;
+        background: pink;
+      }
+      .fondo3{
+        height: 400px;
+        background: salmon;
+      }
+      .bg-dark{
+        transition: all 1s ease;
+
+      }/*
+li{border:3px;
+border-style:solid;
+
+ }
+div{border:1px;
+border-style:dotted;
+}
+span{border:1px;
+
+border-style:dashed;
+}
+      */
+.nav-Fcolores{
+  background-color: #FFFFFF;
+}
+
+
+      /* Show it is fixed to the top */
+.nav-sombra{
+-webkit-box-shadow: 1px 0px 18px -1px rgba(0,0,0,1);
+-moz-box-shadow: 1px 0px 18px -1px rgba(0,0,0,1);
+box-shadow: 1px 0px 18px -1px rgba(0,0,0,1);
+}
+
+
+.iconidColor1{
+    color: #FFFFFF;
+}
+
+.iconidColor2{
+    color: #000000;
+}
+.botonpersonalizado{
+   background: transparent;
+    text-align: left;
+    width: 100%;
+    border: none;
+ padding: 1px 0;
+    font-weight: normal;
+margin-top: 0.31em;
+    cursor: pointer;
+
+
+}
+.hovf:hover{
+  color:#FF0000;
+}
+.icono{
+ 
+position: relative;
+border: none;
+right: 8px;
+ 
+ }
+ 
+.mintext{
+    font-size: 10px;
+    text-align: center;
+}
+.margen{
+margin-left: 6px;
+margin-top: 0px;
+margin-right: 6px;
+margin-bottom: 0px;
+}
+
+.hr{  display: block;
+    margin-top: 0.01em; /*margen de altura "+Y"*/
+    margin-bottom: 0.01em;/*margen de altura "-Y"*/
+ width: 50%; /*Amando de -x y +x*/
+    border-style: inset;
+    border-width: 1px;}
+
+
+
+
+/*
+.tamamo{
+    text-align: left;
+    width: 100%;
+ padding: 1px 0;
+    font-weight: normal;
+    cursor: pointer;
+
+}    */
+
+
+/*amti scroll*/
+
+#fullpage {
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 10em;
+  color:#fff;
+  margin-left: 6px;
+margin-top: 500px;
+margin-right: 6px;
+margin-bottom: 500px;
+}
+
+.sesion{width:100%;
+		top: 47%;
+	transform: translateY(40%);
+}
+/*.vertical-center {
+	text-align:center;
+	width:100%;
+	position: absolute;
+	top: 47%;
+	transform: translateY(-47%);
+}*/
+.carta{
+	display: block;
+	width: 300px;
+	height: 600px;
+ text-align: center;
+transform: translateX(5%);
+ transform: translateY(25%);
+}
+.cartaee{
+	top: 30%;
+   transform: translateY(30%);
+	display: block;
+	width: 300px;
+	width:100%;
+	height: 600px;
+ text-align: center;
+	margin-bottom:5%;
+}
+.circuloee{
+
+
+	  text-align: center;
+	display: block;
+	margin-left: 29% ;
+	margin-right:10%; 
+	margin-bottom:10%;
+	margin-top:10%; 
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background: red; 
+}
+
+.circulo{
+
+
+	  text-align: center;
+	display: block;
+	margin: 10% 25%;
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background: red; 
+}
+.vecicono{
+
+height: 100%;
+font-size: 2.5em;
+color:  #FFFFFF;
+}
+.bordeicono{
+	height:5em;
+}
+.icono1{
+     font-size: 120%;
+  text-align: center;
+
+ }
+ .seccioncolor{
+  background-color: #FF6166;
+ }
+
+.pee{
+
+ margin-left: 20%;
+ margin-right: 20%;
+ color: white; 
+font-size: 1.2em;
+  font-family:  Arial, Helvetica, sans-serif;
+text-shadow: -1px -1px 1px #000000, 1px -1px 1px #333, -1px 1px 1px #000000, 1px 1px 1px #333;
+letter-spacing: 1px;
+}
+.h1ee{
+	 color: white; 
+	font-size: 1.7em;
+  font-family:  Arial, Helvetica, sans-serif;
+	text-shadow: -1px -1px 1px #000000, 1px -1px 1px #333, -1px 1px 1px #000000, 1px 1px 1px #333;
+	letter-spacing: 1px;
+}
+.h2ee{
+	 color: white; 
+	font-size: 1.5em;
+  font-family:  Arial, Helvetica, sans-serif;
+	text-shadow: -1px -1px 1px #000000, 1px -1px 1px #333, -1px 1px 1px #000000, 1px 1px 1px #333;
+	letter-spacing: 1px;
+}
+
+.ha{
+	font-size: 1.5em;
+}
+
+.h11{
+font-size: 1.6em;
+}
+.h22{
+font-size: 1.4em;
+}
+
+.pe{
+font-size: 1.2em;
+ margin-left: 20%;
+ margin-right: 20%;
+ color:#9E9E9E;
+
+
+}
+
+.h1ecenter{
+	text-align:center;
+    margin: 5% 30%;
+	
+		
+	width: 50%;
+	height: 250px;
+
+transform: translateX(50%);
+ transform: translateY(50%);
+
+margin-top: 50px;
+
+}
+
+
+.table-fixed tbody {
+height: 200px;
+overflow-y: auto;
+width: 100%;
+}
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+display: block;
+}
+.table-fixed tr:after {
+content: "";
+display: block;
+visibility: hidden;
+clear: both;
+}
+.table-fixed tbody td,
+.table-fixed thead > tr > th {
+float: left;
+}
