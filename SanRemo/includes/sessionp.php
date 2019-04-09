@@ -1,11 +1,11 @@
 <?php
-function Selectp($csys){
+function Selectp($usys){
     session_start();
     if(!isset($_SESSION['tipo'])){
-        header('location: http://localhost/ejemplosyProyecyos/SanRemo/#home');
+        header('location: http://localhost/ejemplosyProyecyos/SanRemo');
     }else{
-        if($_SESSION['tipo'] != $csys){
-            header('location: http://localhost/ejemplosyProyecyos/SanRemo/#home');
+        if($_SESSION['tipo'] != $usys){
+            header('location: http://localhost/ejemplosyProyecyos/SanRemo');
         }
     }
 }

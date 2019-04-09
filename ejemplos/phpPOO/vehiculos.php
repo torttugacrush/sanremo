@@ -6,7 +6,7 @@
 
         function Coche(){ 
             $this->ruedas=4;
-            $this->color;
+            $this->color="";
             $this->motor=1600;
         }
 

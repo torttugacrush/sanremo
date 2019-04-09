@@ -21,7 +21,7 @@
             break;
             
             case 3:
-            header('location: Alumno/alumno.php');
+            header('location: Alumno/AlIndex.php');
             break;
 
             default:
@@ -52,7 +52,7 @@
                 break;
 
                 case 3:
-                   header('location: Alumno/alumno.php');
+                   header('location: Alumno/AlIndex.php');
                 break;
 
                 default:
