@@ -29,7 +29,6 @@ Curso AJAX con PHP
 https://www.youtube.com/watch?v=GeCNShiLdpc
 
 
-Registro y Login de Usuarios con PHP y Mysql
-https://www.youtube.com/watch?v=37IN_PW5U8E&t=8s
+Login de Usuarios con PHP
+https://www.youtube.com/watch?v=LL66QTP3txE&t
 
-sa

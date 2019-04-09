@@ -1,3 +1,74 @@
+<?php
+    include_once 'database.php';
+    
+    session_start();
+
+    if(isset($_GET['cerrar_sesion'])){
+        session_unset(); 
+
+        // destroy the session 
+        session_destroy(); 
+    }
+    
+    if(isset($_SESSION['tipo'])){
+        switch($_SESSION['tipo']){
+            case 1:
+                header('location: admin.php');
+            break;
+
+            case 2:
+            header('location: docente.php');
+            break;
+            
+            case 3:
+            header('location: alumno.php');
+            break;
+
+            default:
+        }
+    }
+ 
+    if(isset($_POST['login']) && isset($_POST['clave'])){
+        $login = $_POST['login'];
+        $clave = $_POST['clave'];
+
+        $db = new Database();
+        $query = $db->connect()->prepare('SELECT u.idusuario, u.tipo_id FROM acceso a  INNER JOIN usuario u ON a.login = u.idusuario  WHERE  a.login = :login AND a.clave = :clave');
+        $query->execute(['login' => $login, 'clave' => $clave]);
+
+        $row = $query->fetch(PDO::FETCH_NUM);
+        
+        if($row == true){
+            $tipo = $row[1];
+            
+            $_SESSION['tipo'] = $tipo;
+            switch($tipo){
+                case 1:
+                    header('location: admin.php');
+                break;
+
+                case 2:
+                    header('location: docente.php');
+                break;
+
+                case 3:
+                   header('location: alumno.php');
+                break;
+
+                default:
+            }
+        }else{
+            // no existe el usuario
+            echo "Nombre de usuario o contraseña incorrecto";
+        }
+        
+
+    }
+
+?>
+ 
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -98,7 +169,7 @@
        </div> 
       <div class="modal-body">
         
-<form class="form-signin"  action="login" method="post">
+<form class="form-signin"  action="#" method="POST">
       <div class="text-center mb-4">
         <img class="mb-4" src="./login_files/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">San Remo</h1>
@@ -106,12 +177,12 @@
       </div>
 
       <div class="form-label-group">
-        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" name="txtUsu">
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" name="login">
         <label for="inputEmail">Usuario</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required=""name="txtPas" >
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required=""name="clave" >
         <label for="inputPassword">Password</label>
       </div>
 
@@ -121,7 +192,7 @@
         </label>
       </div>
 
-      <button class="btn btn-lg btn-primary btn-block"name="btnIngresar" value="Ingresar" type="submit">Iniciar Sesión</button>
+      <button class="btn btn-lg btn-primary btn-block"name="btnIngresar" value="Iniciar sesión" type="submit">Iniciar Sesión</button>
       <p class="mt-5 mb-3 text-muted text-center">© 2019</p>
     </form>
 

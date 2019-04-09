@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-04-2019 a las 23:21:02
+-- Tiempo de generación: 09-04-2019 a las 02:54:29
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.3
 
@@ -32,6 +32,15 @@ CREATE TABLE `acceso` (
   `login` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
   `clave` varchar(8) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `acceso`
+--
+
+INSERT INTO `acceso` (`login`, `clave`) VALUES
+('alumno', '123'),
+('Docente', '123'),
+('mibaneza', '123');
 
 -- --------------------------------------------------------
 
@@ -215,6 +224,15 @@ CREATE TABLE `usuario` (
   `Fecha_Insert` datetime NOT NULL,
   `Fecha_Edit` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`idusuario`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `Fecha_nacimiento`, `Dni`, `Sexo`, `tipo_id`, `Fecha_Insert`, `Fecha_Edit`) VALUES
+('alumno', 'marcus', 'awdawdwad', 'awdawdawdawd', '2019-04-03', 12345678, 1, 3, '2019-04-10 00:00:00', '2019-04-09 00:49:20'),
+('Docente', 'torttuga', 'crush', 'mat', '2019-04-10', 12345678, 1, 2, '2019-04-17 00:00:00', '2019-04-09 00:48:19'),
+('mibaneza', 'marcos', 'ibanez', 'alcas', '1997-07-23', 12345678, 1, 1, '2019-04-08 00:00:00', '2019-04-08 21:41:51');
 
 --
 -- Índices para tablas volcadas
