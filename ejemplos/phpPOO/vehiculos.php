@@ -61,13 +61,13 @@
 
         }
 
-      
+    }    
      /*   function establece_color($colorCamion,$nombreCamion){
             $this->color=$colorCamion;
 
             echo "El color de" .  $nombreCamion . "es: " . $this->color . "<br>";
         }*/
-    }
+  
   /* $renault = new Coche();
    
    $mazda = new Coche();
