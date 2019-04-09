@@ -29,37 +29,25 @@
         function establece_color($colorCoche,$nombreCoche){
             $this->color=$colorCoche;
 
-            echo "El color de" .  $nombreCoche . "es: " . $this->color . "<br>";
+            echo "El color de " .  $nombreCoche . " es: " . $this->color . "<br>";
         }
     }
 
-    class Camion {
-        var $ruedas;
-        var $color;
-        var $motor;
+    class Camion extends Coche{
+
+
 
         function Camion(){ 
             $this->ruedas=8;
             $this->color="gris";
             $this->motor=2600;
         }
+        function establece_color($colorCamion,$nombreCamion){
+            $this->color=$olorCamion;
 
-        function arrancar(){
-
-            echo "estoy arrancando <br>";
-
-            
+            echo "El color de" .  $ombreCamion . "es: " . $this->color . "<br>";
         }
-        function girar(){
 
-            echo "Eestoy girando <br>";
-
-        }
-        function frenar(){
-
-            echo"estoy frenando <br>";
-
-        }
 
     }    
      /*   function establece_color($colorCamion,$nombreCamion){

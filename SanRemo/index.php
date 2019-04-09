@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>  
+<?php include('includes/header.php'); ?>  
 
 
 <section class="panel home seccioncolor" data-section-name="home">

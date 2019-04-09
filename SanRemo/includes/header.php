@@ -1,5 +1,5 @@
 <?php
-    include_once 'database.php';
+    include_once 'util/database.php';
     
     session_start();
 
@@ -13,15 +13,15 @@
     if(isset($_SESSION['tipo'])){
         switch($_SESSION['tipo']){
             case 1:
-                header('location: admin.php');
+                header('location: Administrador/admin.php');
             break;
 
             case 2:
-            header('location: docente.php');
+            header('location: Docente/docente.php');
             break;
             
             case 3:
-            header('location: alumno.php');
+            header('location: Alumno/alumno.php');
             break;
 
             default:
@@ -44,15 +44,15 @@
             $_SESSION['tipo'] = $tipo;
             switch($tipo){
                 case 1:
-                    header('location: admin.php');
+                    header('location: Administrador/admin.php');
                 break;
 
                 case 2:
-                    header('location: docente.php');
+                    header('location: Docente/docente.php');
                 break;
 
                 case 3:
-                   header('location: alumno.php');
+                   header('location: Alumno/alumno.php');
                 break;
 
                 default:
