@@ -1,17 +1,7 @@
-<?php
-
-    session_start();
-
-    if(!isset($_SESSION['tipo'])){
-        header('location: index.php');
-    }else{
-        if($_SESSION['tipo'] != 2){
-            header('location: index.php');
-        }
-    }
-
-
+<?php include("../includes/sessionp.php");
+Selectp(2);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

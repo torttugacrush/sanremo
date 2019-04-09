@@ -6,7 +6,7 @@
 
         function Coche(){ 
             $this->ruedas=4;
-            $this->color="";
+            $this->color;
             $this->motor=1600;
         }
 
@@ -38,14 +38,14 @@
 
 
         function Camion(){ 
-            $this->ruedas=8;
+            $this->ruedas;
             $this->color="gris";
             $this->motor=2600;
         }
         function establece_color($colorCamion,$nombreCamion){
-            $this->color=$olorCamion;
+            $this->color=$colorCamion;
 
-            echo "El color de" .  $ombreCamion . "es: " . $this->color . "<br>";
+            echo "El color de" .  $nombreCamion . "es: " . $this->color . "<br>";
         }
 
 

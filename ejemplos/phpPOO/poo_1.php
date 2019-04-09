@@ -18,7 +18,7 @@ echo "el pedaso tiene " . $pegaso->ruedas . " ruedas <br>";
 
 $pegaso->frenar();
 
-$mazda->establece_color('marco','polo');
+$mazda->establece_color(1,'polo');
 ?>
 
 </body>
