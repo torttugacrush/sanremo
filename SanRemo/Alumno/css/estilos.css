@@ -1,0 +1,16 @@
+.tablaC{
+    position: absolute;
+    /* margen derecho*/
+    right: 5%;
+    /*margen superior*/
+    top: 20%;
+	/*display: inline-block;
+   vertical-align: top;
+    /*margen izquierdo*/
+    width: 70%;
+}
+.sectionU{
+    width: 60%;
+    background-color: powderblue;
+}
+

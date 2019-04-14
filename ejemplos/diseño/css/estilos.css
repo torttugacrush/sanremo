@@ -1,0 +1,88 @@
+body
+{
+	background: #222;
+	color: #fff;
+	font-family: arial;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+header
+{
+	background: url("../images/logo.png") no-repeat 5% center,
+				#2E64FE;
+	background-size: 80px;
+	font-weight: normal;
+	margin: 0;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+}
+
+header h1
+{
+	margin: 0;
+	text-shadow: #000 3px 3px 3px ;
+}
+header h2
+{
+	margin: 0;
+}
+
+nav
+{
+	background: #585858;
+	bottom: 0;
+	margin: 0;
+	text-align: center;
+}
+
+nav ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li
+{
+	display: inline-block;
+}
+nav li a
+{
+	background: #D23D15;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 0 1.5em 0 0;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+nav li a:hover
+{
+	background: white;
+	color: #222;	
+	-webkit-transform: scale(1.2) rotate(-5deg);
+	text-align: left;
+}
+
+section
+{
+	background: #151515;
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+
+aside
+{
+	display: inline-block;
+	width: 20%;
+}
+
+
+li
+{
+	background: #D23D15;
+}
